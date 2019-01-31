@@ -1,4 +1,7 @@
+#mac metadata
 .DS_Store
+#backup files
 *~
+#everything but .m files
 *.*
 !*.m
