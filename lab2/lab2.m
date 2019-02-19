@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Joseph Doyle, UML Spring '19%
 %EECE 1070-821 Lab           %
-%Lab 3                       %
+%Lab 2 Part 1                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %part 1 section a
@@ -23,9 +23,28 @@ print('-dpng','-r300','Part 1(a)')
 
 %part 1 section b
 fit1=polyfit(year,time,1) %get the fit coefficients
+best = polyval(fit1,year)
 
 %part 1 section c
 %plot the best fit
-plot (year, polyval(fit1,year),'linewidth',1,'color','g','markersize',6)
+plot (year, best,'linewidth',1,'color','g','markersize',6)
 %save plot as png for report
-print('-dpng','-r300','Part 1(b)')
+print('-dpng','-r300','Part 1(c)')
+
+%part 1 section d
+rms=(mean((time-best).^2))^.5;
+
+%part 1 section e
+plot (1960,11.0, "r*");
+%plots 1960 100 meter winner
+%save plot as png for report
+print('-dpng','-r300','Part 1(e)')
+
+predicted = polyval(fit1, 1960)
+error = (abs(11.0-predicted)/predicted)*100
+
+%part 1 section f
+last = polyval(fit1,2004)
+plot (2004, last,'linewidth',1,'color','g','markersize',6)
+%= 10.5780 seconds. Compared to the 10.93 time recorded in 2004 the
+%difference is 0.352 seconds.
