@@ -2,6 +2,8 @@
 .DS_Store
 #backup files
 *~
-#everything but .m files
+#everything but .m .ino and .h files
 *.*
 !*.m
+!*.ino
+!*.h
