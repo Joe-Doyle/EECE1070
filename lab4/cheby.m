@@ -17,7 +17,7 @@ else
     ci1 = c1;
     while i < n
         i = i + 1;
-        ci = add1(2.*ci1,-ci2);
+        ci = add(2.*ci1,-ci2);
         ci2 = ci1;
         ci1 = ci;
         c = ci;
