@@ -1,7 +1,7 @@
 ////////////////////////////////
 //Joseph Doyle, UML Spring '19//
 //EECE 1070-821 Lab           //
-//lab5section3.ino            //
+//tone_demo.ino               //
 ////////////////////////////////
 
 #define tonePin 11
