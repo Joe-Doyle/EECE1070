@@ -1,7 +1,7 @@
 ////////////////////////////////
 //Joseph Doyle, UML Spring '19//
 //EECE 1070-821 Lab           //
-//lab1section5.ino            //
+//blink_redgreen.ino          //
 ////////////////////////////////
 
 #define ledRED    11  //define pins for both leds

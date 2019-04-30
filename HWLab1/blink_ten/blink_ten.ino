@@ -1,7 +1,7 @@
 ////////////////////////////////
 //Joseph Doyle, UML Spring '19//
 //EECE 1070-821 Lab           //
-//lab1section4.ino            //
+//blink_ten.ino               //
 ////////////////////////////////
 
 #define led 12
